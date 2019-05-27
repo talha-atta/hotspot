@@ -14,7 +14,7 @@ class HomeTabBarController: UITabBarController {
     let csvc2 = ComingSoonViewController()
     let csvc3 = ComingSoonViewController()
     let homeViewController = HomeViewController()
-    let networkController = NetworksFlowController()
+    let browseController = BrowseViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,8 +59,8 @@ extension HomeTabBarController {
     }
     
     func createSecondViewController() -> UIViewController {
-        var navigationVC = ScutoNavigationController(rootViewController: networkController)
-        navigationVC = setupTabBarItem(for: navigationVC, title: "NETWORKS", imageName: "networkIcon", selectedImageName: "")
+        var navigationVC = ScutoNavigationController(rootViewController: browseController)
+        navigationVC = setupTabBarItem(for: navigationVC, title: "BROWSE", imageName: "networkIcon", selectedImageName: "")
         return navigationVC
     }
     

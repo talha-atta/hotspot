@@ -54,7 +54,6 @@ class HomeViewController: UIViewController {
 
     let mapView = HomeHotspotsCardView()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutViews()
